@@ -4,28 +4,28 @@ public class ValidadorAgente {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Digite seu Codinome: ");
+        System.out.print("Enter your Codename: ");
         String codinome = scanner.nextLine();
 
-        // TODO: Criar a regex para o codinome
+        // TODO: Create regex for codename
         String regexCodinome = "^Agente-[A-Z]{3}$"; 
 
         if (codinome.matches(regexCodinome)) {
-            System.out.println("Codinome válido!");
+            System.out.println("Valid codename!");
         } else {
-            System.out.println("Codinome inválido!");
+            System.out.println("Invalid codename!");
         }
 
-        System.out.print("Digite sua Senha: ");
+        System.out.print("Enter your Password: ");
         String senha = scanner.nextLine();
 
-        // TODO: Criar a regex para a senha
+        // TODO: Create regex for password
         String regexSenha = "^\\d{4, 6}$"; 
 
         if (senha.matches(regexSenha)) {
-            System.out.println("Senha válida!");
+            System.out.println("Valid password!");
         } else {
-            System.out.println("Senha inválida!");
+            System.out.println("Invalid password!");
         }
 
         scanner.close();
